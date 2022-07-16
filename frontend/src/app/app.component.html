@@ -1,3 +1,8 @@
 <input type="file" (change)="onFileSelected($event)" />
+<label>Enter Id</label>
+<input type="text" [(ngModel)]="id" />
+<button (click)="onSubmitId()">Submit</button>
+<p>{{idData}}</p>
+{{metaData}}
 
 <router-outlet></router-outlet>
