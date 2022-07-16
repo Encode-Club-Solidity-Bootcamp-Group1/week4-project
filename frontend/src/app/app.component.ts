@@ -6,11 +6,13 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
 export class AppComponent {
   id = '';
   idData = '';
   title = 'frontend';
-  metaData = '';
+  error = '';
+  metaData: any[] = [];
   fileName = '';
 
   constructor(private http: HttpClient) { }
@@ -19,11 +21,26 @@ export class AppComponent {
     const upload$ = this.http.get(`http://localhost:3000/files`)
     upload$.subscribe(
       {
-        next: data => {
-          this.metaData = JSON.stringify(data)
+        next: (data) => {
+          for (const key in data) {
+            const resolvedUrl = (data as any)[key].resolvedUrl
+            this.http.get(`${resolvedUrl}`)
+              .subscribe({
+                next: (data2) => {
+                  // Convert the ipfs string to https
+                  const ipfsImage = (data2 as any).image.split("ipfs://")[1];
+                  const newImageString = `https://ipfs.io/ipfs/`+ipfsImage;
+                  (data2 as any).image = newImageString
+                  this.metaData.push(data2);
+                },
+                error: (error2) => {
+                  this.error = error2
+                }
+              })
+          }
         },
         error: error => {
-          this.metaData = JSON.stringify(error)
+          this.error = JSON.stringify(error)
         }
       }
     )
