@@ -1,6 +1,7 @@
 import deploy from "./deploy";
 import getWalletAccount from "./get-wallet-account";
 import mint from "./mint";
+import getTokenUri from "./get-token-uri";
 import "dotenv/config";
 
 async function main() {
@@ -26,6 +27,7 @@ async function main() {
   // =================================================================
   for (let i = 0; i < 10; i++) {
     await mint(ownerSigner, nftTokenContractAddress);
+    await getTokenUri(ownerSigner, nftTokenContractAddress, i)
   }
 }
 
