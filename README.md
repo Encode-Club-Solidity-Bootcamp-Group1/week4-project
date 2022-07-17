@@ -5,43 +5,44 @@
 1. our IPFS NFTImage folder CID
 https://ipfs.io/ipfs/QmXyaz11vZdsZtK3SFzX8HEXcUx2X5VkL41WbXDaGneH1d
 2. our IPFS NFTMeta folder CID
-https://ipfs.io/ipfs/QmXT89RwigLvdfHFvpX997AumqtHuTFKzhqWfgmVudaTFB
+https://ipfs.io/ipfs/QmZeCWjss8aZEwmywR63XSeniQBm5mqtSLUYKv7rQ6wFPP
 3. run contracts deploy script to deploy NFTCollection
 ```
 Using address 0xd21b2c4fd19561270bA4333b6A8ae77b31b01E48
-BaseURI : https://ipfs.io/ipfs/QmXT89RwigLvdfHFvpX997AumqtHuTFKzhqWfgmVudaTFB/
+BaseURI : https://ipfs.io/ipfs/QmZeCWjss8aZEwmywR63XSeniQBm5mqtSLUYKv7rQ6wFPP/
 Awaiting confirmations
 Completed
-NFTContract deployed at 0xFbeDb884Dd98cEF05106724e9ECC86398499cA95
+NFTContract deployed at 0x8bE4523b36810809890401E3d5e728490f34eC8F
 Mint NFT tokens for address 0xd21b2c4fd19561270bA4333b6A8ae77b31b01E48
-Mint NFT transacton 0xb76956de9f4667c732c724f2a915409452a5983e8e2b6c0c0d4a440ba316ea5c
-NFT token URI : " : https://ipfs.io/ipfs/QmXT89RwigLvdfHFvpX997AumqtHuTFKzhqWfgmVudaTFB/0
+Mint NFT transacton 0x30fab10d0dec59f84aeadeaee6f7bff27a102b100e5513808f85825bd5a31686
+NFT token URI : " : https://ipfs.io/ipfs/QmZeCWjss8aZEwmywR63XSeniQBm5mqtSLUYKv7rQ6wFPP/0
 Mint NFT tokens for address 0xd21b2c4fd19561270bA4333b6A8ae77b31b01E48
-Mint NFT transacton 0xc22a01b0f25ba1620b55b6bf15b8f0e47ce67fffab27b47db32819da8cd6ab1e
-NFT token URI : " : https://ipfs.io/ipfs/QmXT89RwigLvdfHFvpX997AumqtHuTFKzhqWfgmVudaTFB/1
+Mint NFT transacton 0xd1c21c82246163e41e2296575143a513d51732f880034d6cd008809a5baff11e
+NFT token URI : " : https://ipfs.io/ipfs/QmZeCWjss8aZEwmywR63XSeniQBm5mqtSLUYKv7rQ6wFPP/1
 Mint NFT tokens for address 0xd21b2c4fd19561270bA4333b6A8ae77b31b01E48
-Mint NFT transacton 0x2abcf236a1e3a59b16f28609d0c21c027b9997f776295e45ab8da742797cdc44
-NFT token URI : " : https://ipfs.io/ipfs/QmXT89RwigLvdfHFvpX997AumqtHuTFKzhqWfgmVudaTFB/2
+Mint NFT transacton 0xd2917fe11e802a4e28285329a21fb78a04e5ca0c6f7bb58f81530c25ad01ee0d
+NFT token URI : " : https://ipfs.io/ipfs/QmZeCWjss8aZEwmywR63XSeniQBm5mqtSLUYKv7rQ6wFPP/2
 Mint NFT tokens for address 0xd21b2c4fd19561270bA4333b6A8ae77b31b01E48
-Mint NFT transacton 0x03bc59697acc2193ab7b3613f6b863465a8505d2c502c39b18729a467df32b95
-NFT token URI : " : https://ipfs.io/ipfs/QmXT89RwigLvdfHFvpX997AumqtHuTFKzhqWfgmVudaTFB/3
+Mint NFT transacton 0xf61d596b214f9539117fcc809844972628f4b5f44a463438e528d54f140d7099
+NFT token URI : " : https://ipfs.io/ipfs/QmZeCWjss8aZEwmywR63XSeniQBm5mqtSLUYKv7rQ6wFPP/3
 Mint NFT tokens for address 0xd21b2c4fd19561270bA4333b6A8ae77b31b01E48
-Mint NFT transacton 0xec2843f9052dd258a2f40b43a9467a09e0051db53b0fcc5339e089ef01b61251
-NFT token URI : " : https://ipfs.io/ipfs/QmXT89RwigLvdfHFvpX997AumqtHuTFKzhqWfgmVudaTFB/4
+Mint NFT transacton 0x01982251d3b45517a88d42813c7823a580405611ba68909bbc2f694da26d73e7
+NFT token URI : " : https://ipfs.io/ipfs/QmZeCWjss8aZEwmywR63XSeniQBm5mqtSLUYKv7rQ6wFPP/4
 Mint NFT tokens for address 0xd21b2c4fd19561270bA4333b6A8ae77b31b01E48
-Mint NFT transacton 0x9af44c87b64adebda1beae7e70e67bd97feb87482391f4021872640e85fb348f
-NFT token URI : " : https://ipfs.io/ipfs/QmXT89RwigLvdfHFvpX997AumqtHuTFKzhqWfgmVudaTFB/5
+Mint NFT transacton 0x07713a1dc0ecc3f6d7720aac6fdd0cc79c1861a471b37e755bb19d1faaca36ef
+NFT token URI : " : https://ipfs.io/ipfs/QmZeCWjss8aZEwmywR63XSeniQBm5mqtSLUYKv7rQ6wFPP/5
 Mint NFT tokens for address 0xd21b2c4fd19561270bA4333b6A8ae77b31b01E48
-Mint NFT transacton 0xf06b0a13f1ce678e8dbee5e460abe055caf3ef1cd23b5d55df6a2389e6649236
-NFT token URI : " : https://ipfs.io/ipfs/QmXT89RwigLvdfHFvpX997AumqtHuTFKzhqWfgmVudaTFB/6
+Mint NFT transacton 0x0fe8648fb9287b3d4c8b824edd9a42d5634a66c9179fc75f1f4aa9fefaefab73
+NFT token URI : " : https://ipfs.io/ipfs/QmZeCWjss8aZEwmywR63XSeniQBm5mqtSLUYKv7rQ6wFPP/6
 Mint NFT tokens for address 0xd21b2c4fd19561270bA4333b6A8ae77b31b01E48
-Mint NFT transacton 0x48660f3fc56e9cd2cf4fb99a71ddbf019775db38abfdd71e20f09b1052e64bb1
-NFT token URI : " : https://ipfs.io/ipfs/QmXT89RwigLvdfHFvpX997AumqtHuTFKzhqWfgmVudaTFB/7
+Mint NFT transacton 0x5a503d554bd9efaa5c7aca0e2317ee78ba5bced58e6cea4fee9d2a543c65f93c
+NFT token URI : " : https://ipfs.io/ipfs/QmZeCWjss8aZEwmywR63XSeniQBm5mqtSLUYKv7rQ6wFPP/7
 Mint NFT tokens for address 0xd21b2c4fd19561270bA4333b6A8ae77b31b01E48
-Mint NFT transacton 0x49dc46d954d12793956f9998f84f8b1822f85fc95ebfad7304bc0f79b2bb523d
-NFT token URI : " : https://ipfs.io/ipfs/QmXT89RwigLvdfHFvpX997AumqtHuTFKzhqWfgmVudaTFB/8
+Mint NFT transacton 0xc6ff8acdaf3b93fcc825e95fd8ea6b9219218d14b32b35be90a067201e4a38dc
+NFT token URI : " : https://ipfs.io/ipfs/QmZeCWjss8aZEwmywR63XSeniQBm5mqtSLUYKv7rQ6wFPP/8
 Mint NFT tokens for address 0xd21b2c4fd19561270bA4333b6A8ae77b31b01E48
-Mint NFT transacton 0xe2176dbc20c1e197d3a5f4b2d84b99b0f940211d9c8c1c8eeeb201c364ab408c
-NFT token URI : " : https://ipfs.io/ipfs/QmXT89RwigLvdfHFvpX997AumqtHuTFKzhqWfgmVudaTFB/9
+Mint NFT transacton 0x94465a42f7167a558e43a5245f129750833f0600a8269ab2bd856d3158cda1e4
+NFT token URI : " : https://ipfs.io/ipfs/QmZeCWjss8aZEwmywR63XSeniQBm5mqtSLUYKv7rQ6wFPP/9
 ```
 4. execute the backend and use swagger to get metadata of the NFT collection
+5. execute the frontend and display your NFT mint

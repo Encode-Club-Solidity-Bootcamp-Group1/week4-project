@@ -1,10 +1,5 @@
-<input type="file" (change)="onFileSelected($event)" />
-<label>Enter Id</label>
-<input type="text" [(ngModel)]="id" />
-<button (click)="onSubmitId()">Submit</button>
-<p>{{idData}}</p>
-<p style="color: red;">{{error}}</p>
 <ul *ngFor="let item of metaData">
+  <br>Meta Data : {{item.metadata}}
   <img style="width: 200px; height: 200px" src={{item.image}} />
   <h3>Image Name: {{item.name}}</h3>
   <h6>Image Description: {{item.description}}</h6>

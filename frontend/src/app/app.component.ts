@@ -18,59 +18,27 @@ export class AppComponent {
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
-    const upload$ = this.http.get(`http://localhost:3000/files`)
-    upload$.subscribe(
-      {
-        next: (data) => {
-          for (const key in data) {
-            const resolvedUrl = (data as any)[key].resolvedUrl
-            this.http.get(`${resolvedUrl}`)
-              .subscribe({
-                next: (data2) => {
-                  // Convert the ipfs string to https
-                  const ipfsImage = (data2 as any).image.split("ipfs://")[1];
-                  const newImageString = `https://ipfs.io/ipfs/`+ipfsImage;
-                  (data2 as any).image = newImageString
-                  this.metaData.push(data2);
-                },
-                error: (error2) => {
-                  this.error = error2
-                }
-              })
-          }
-        },
-        error: error => {
-          this.error = JSON.stringify(error)
+    const baseURIRequest = this.http.get(`http://localhost:3000/nftcollect/baseURI`)
+    baseURIRequest.subscribe({
+      next: (baseURI) => {
+        for (let i = 0; i < 10; i++) {
+          const metaDataRequestURL = baseURI + "" + i;
+          console.log(metaDataRequestURL);
+          const metadataApi = this.http.get(metaDataRequestURL)
+          metadataApi.subscribe(
+            {
+              next: (data) => {
+                const imageUrl = (data as any).image.split("ipfs://")[1];
+                const newImageUrl = `https://ipfs.io/ipfs/`+imageUrl;
+                (data as any).image = newImageUrl;
+                (data as any).metadata = JSON.stringify(data);
+                console.log(data);
+                this.metaData.push(data);
+              }
+            }
+          )
         }
       }
-    )
-  }
-
-  onFileSelected(event: any) {
-    const file: File = event.target.files[0]
-    if (file) {
-      this.fileName = file.name
-      const formData = new FormData()
-      formData.append("file", file)
-      const upload$ = this.http.post("http://localhost:3000/upload", formData)
-      upload$.subscribe()
-    }
-  }
-  onSubmitId() {
-    console.log(this.id)
-    console.log("Submit ID button clicked")
-    if (this.id) {
-      const upload$ = this.http.get(`http://localhost:3000/files/${this.id}`)
-      upload$.subscribe(
-        {
-          next: data => {
-            this.idData = JSON.stringify(data)
-          },
-          error: error => {
-            this.idData = JSON.stringify(error)
-          }
-        }
-      )
-    }
+    })
   }
 }
